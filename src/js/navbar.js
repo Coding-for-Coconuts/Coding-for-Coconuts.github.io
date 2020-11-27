@@ -1,7 +1,7 @@
 Vue.component('nav-bar', {
     template: `
     <nav class="navbar bg-info flex-row">
-        <h2>Coding for Coconuts</h2>
+        <h2><a href="../html/index.html" style="color:white; text-decoration:none;" title="Go to homepage">Coding for Coconuts</a></h2>
         <div>
             <ul class="navbar-nav flex-row">
                 <li class="nav-item">
