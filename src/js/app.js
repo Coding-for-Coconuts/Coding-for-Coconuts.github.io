@@ -33,7 +33,7 @@ Vue.component('problem', {
         <div class="d-flex justify-content-between">
             <button class="btn btn-info">Last Problem</button>
             <button type="submit" class="btn btn-info">Check Answer</button>
-            <button class="btn btn-info">Next Problem</button>
+            <a class="btn btn-info">Next Problem</button>
         </div>
     </div>
     `
