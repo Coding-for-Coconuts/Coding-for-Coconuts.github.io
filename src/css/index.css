@@ -1,0 +1,10 @@
+.madlib {
+  border: 1px solid black;
+
+  margin-bottom: 5vh;
+
+  margin-left:17%;
+  overflow-y:auto;
+  margin-top: 4%;
+  height: 30%;
+}

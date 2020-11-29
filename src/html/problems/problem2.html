@@ -12,8 +12,36 @@
     <body>
         <div id="app">
         <nav-bar></nav-bar>
-        <problem number="2" description="Problem 2 description here."></problem>
-
+        <problem number="2" description="In this problem you will navigate through a maze to understand how sequences work. Help Manny the Monkey reach the bananas! Give him directions (up, down, left, right) to reach the bananas. Try to use the fastest route available because Manny is REALLY hungry! Beware of the roadblocks! You may have to navigate around one or more roadblocks to reach the bananas. Present your answer like this: 'left,up,down,left'. Make sure not to add any spaces, and please keep everything lowercase!"></problem>
+        <table class="table table-bordered" style="margin-top: 5%">
+          <tbody>
+            <tr>
+              <th style="width:25%" scope="col"><center><img src="../../images/monkey.png" width="75"></center></th>
+              <th style="width:25%" scope="col"></th>
+              <th style="width:25%" scope="col"><center><img src="../../images/block.png" width="75"></center></th>
+              <th style="width:25%" scope="col"></th>
+            </tr>
+            <tr>
+              <th scope="row"><center><img src="../../images/block.png" width="75"></center></th>
+              <td></td>
+              <td></td>
+              <td><center><img src="../../images/block.png" width="75"></center></td>
+            </tr>
+            <tr>
+              <th scope="row"><center><img src="../../images/empty_maze_slot.png" width="75"></center></th>
+              <td><center><img src="../../images/block.png" width="75"></center></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"><center><img src="../../images/block.png" width="75"></center></th>
+              <td></td>
+              <td><center><img src="../../images/bananas.png" width="85"><center></td>
+              <td><center><img src="../../images/block.png" width="75"></center></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
         <!-- Vue.js -->
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
