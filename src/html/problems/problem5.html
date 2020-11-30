@@ -12,7 +12,13 @@
     <body>
         <div id="app">
         <nav-bar></nav-bar>
-        <problem number="5" description="problem description"></problem>
+        <problem number="5" description="In this problem you will use a number line to understand the values in a for-loop. The syntax for for-loops varies from language to language, but for this example I will use C. A for-loop in C is written as the following: for(i=0; i<10; i=i+1){...}. The first element (i=0), is an initialization for the variable 'i' which we will use to step throught the loop. The second element (i<10) is a test that is run before every loop. In this case, we check to make sure that 'i' is less than 10 before running the loop. The third element (i=i+1) is for incrementing our stepping variable (i) after every execution of the code inside the loop. The last element ({...}) is called a block. A block contains one or more lines of code that will be run each time the second element (i<10) passes its test. To complete this problem, please describe this number line in terms of a for-loop. The green circles represent the values that 'i' will equal during the loop. The red brackets represent boundaries that the value of 'i' will not surpass. If the for-loop was for(i=0; i<10; i=i+1){...}, then your answer should be formatted like this: '0,10,i+1'."></problem>
+
+        <div class="madlib col-md-8 .flex-row">
+          <center> Fill in the blanks for this for-loop based on the number line below. </br> for(i=____; i<____; i=_____){...} </center>
+        </div>
+        <center><img src="../../images/number-line.png"></center>
+
 
         <!-- Vue.js -->
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
