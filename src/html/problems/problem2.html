@@ -12,7 +12,7 @@
     <body>
         <div id="app">
         <nav-bar></nav-bar>
-        <problem number="2" description="In this problem you will navigate through a maze to understand how sequences work. Help Manny the Monkey reach the bananas! Give him directions (up, down, left, right) to reach the bananas. Try to use the fastest route available because Manny is REALLY hungry! Beware of the roadblocks! You may have to navigate around one or more roadblocks to reach the bananas. Present your answer like this: 'left,up,down,left'. Make sure not to add any spaces, and please keep everything lowercase!"></problem>
+        <problem-display v-bind:problem="problems[1]"></problem-display>
         <table class="table table-bordered" style="margin-top: 5%">
           <tbody>
             <tr>
