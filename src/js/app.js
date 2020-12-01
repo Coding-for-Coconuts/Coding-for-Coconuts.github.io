@@ -31,9 +31,9 @@ Vue.component('problem-display', {
             </div>
         </form>
         <div class="d-flex justify-content-between">
-            <a id="prev" class="btn btn-info" :href="'./problem'+problem.prevNum+'.html'">Last Problem</a>
+            <a id="prev" class="btn btn-info" :href="'./problem'+problem.prevNum+'.html'" v-bind:class="{'disabled':(problem.number==1)}">Last Problem</a>
             <a id="check" class="btn btn-info" @click="problem.gradeProblem(message)">Check Answer</a>
-            <a id="next" class="btn btn-info" :href="'./problem'+problem.nextNum+'.html'">Next Problem</a>
+            <a id="next" class="btn btn-info" :href="'./problem'+problem.nextNum+'.html'" v-bind:class="{'disabled':(problem.number==9)}">Next Problem</a>
         </div>
     </div>
     `
