@@ -1,17 +1,17 @@
 Vue.component('nav-bar', {
     template: `
     <nav class="navbar bg-info flex-row">
-        <a id="home" href="../../html/index.html"><img src="../../images/coding-for-coconuts-logo.png" alt="Coding for Coconuts"/></a>
+        <a id="home" href="/src/html/index.html"><img src="/src/images/coding-for-coconuts-logo.png" alt="Coding for Coconuts"/></a>
         <div>
             <ul class="navbar-nav flex-row">
                 <li class="nav-item">
-                    <a href="../../html/questions.html">Questions</a>
+                    <a href="/src/html/questions.html">Questions</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../../html/coconutCounter.html">Coconut Counter</a>
+                    <a href="/src/html/coconutCounter.html">Coconut Counter</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../../html/solutions.html">Solutions</a>
+                    <a href="/src/html/solutions.html">Solutions</a>
                 </li>
             </ul>
         </div>
@@ -101,6 +101,16 @@ var app = new Vue({
         }
     },
     methods: {
+        coconutDisplay(){
+            let n = parseInt(localStorage.getItem('coconuts'));
+            let a = [];
+
+            for(let i=0; i<n; i++){
+                a[i]=0;
+            }
+
+            return a;
+        },
         addCoconuts(x) {
             this.coconuts = parseInt(this.coconuts);
             var newCoconuts = parseInt(x);

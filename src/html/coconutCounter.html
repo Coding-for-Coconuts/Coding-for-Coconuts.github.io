@@ -18,7 +18,7 @@
         <div style="background-image:url('../images/trees.jpg'); ">
           <p style="margin-left:5%; margin-top:3%"> You currently have <b><span>{{coconuts}}</span></b> coconuts. Keep up the hard work! </p>
           <div>
-            <img v-for="n in coconuts" src="../images/coconut.png" alt="Coconut" style="width:100px; height:auto">
+            <img v-for="n in coconutDisplay()" src="../images/coconut.png" alt="Coconut" style="width:100px; height:auto">
           </div>
         </div>
         <!-- Vue.js -->
