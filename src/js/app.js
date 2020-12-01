@@ -68,12 +68,12 @@ class Problem {
         let msg="";
         if(this.userSolution == this.correctSolution){
             msg="Correct! You earned "+this.coconuts+" coconuts. You're ready for the next problem.";
+            app.addCoconuts(this.coconuts);
         }
         else {
             msg="Try again! Make sure your answer is formatted correctly and keep working.";
         }
         alert(msg);
-        // addCoconuts(this.coconuts);
     }
 }
 

@@ -17,8 +17,6 @@
         <h1 style="margin-left:5%; margin-top:3%">Coconut Counter</h1>
         <div style="background-image:url('../images/trees.jpg'); ">
           <p style="margin-left:5%; margin-top:3%"> You currently have <b><span>{{coconuts}}</span></b> coconuts. Keep up the hard work! </p>
-          <button @click="addCoconuts(1)">Add 1</button>
-          <button @click="clearCoconuts()">Clear</button>
           <div>
             <img v-for="n in coconuts" src="../images/coconut.png" alt="Coconut" style="width:100px; height:auto">
           </div>
