@@ -3,11 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <title>Coding for Coconuts</title>
-	<style type="text/css">
-	<!--
-	  .tab { margin-left: 40px; }
-	-->
-	</style>
 
         <!-- Bootstrap -->
         <link href="../../css/bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -18,12 +13,15 @@
         <div id="app">
         <nav-bar></nav-bar>
         <problem-display v-bind:problem="problems[6]"></problem-display>
-	<p style="color:red;"> Manny the monkey finds a yellow banana.</p>
-	<p style="color:blue;">If banana is yellow</p>
-	<p class="tab">Pick banana</p>
-	<p style="color:blue;">Else if banana is not yellow</p>
-	<p class="tab">Do not pick banana, keep looking</p>
-	<p style="color:green;">Should Manny pick the banana? Answer 'yes' or 'no'</p>
+        <div class="madlib col-md-8 .flex-row">
+           <p style="color:red; margin-left:40px; margin-top:40px"> Manny the monkey finds a yellow banana.</p>
+	         <p style="color:blue; margin-left:40px">If banana is yellow</p>
+           <p style="margin-left:80px">Pick banana</p>
+           <p style="color:blue; margin-left:40px">Else if banana is not yellow</p>
+           <p style="margin-left:80px">Do not pick banana, keep looking</p>
+           </br>
+           <p style="color:green; margin:40px">Should Manny pick the banana? Answer 'yes' or 'no'</p>
+        </div>
 
         <!-- Vue.js -->
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
